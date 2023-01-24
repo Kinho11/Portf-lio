@@ -79,7 +79,7 @@ export const SobreMim = styled.section`
     }
 
     p{
-      font-size: 1.1rem;
+      font-size: 1.3rem;
       line-height: 1.5;
     }
 
