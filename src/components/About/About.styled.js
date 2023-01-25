@@ -9,7 +9,9 @@ export const SobreMim = styled.section`
 
   h1{
     text-decoration: underline;
-    margin: 2.5rem 0;
+    /* margin: 2.5rem 0; */
+    margin-top: 2.5rem;
+    margin-bottom: 6rem;
     color: white;
     font-size: 2.5rem;
   }
@@ -57,7 +59,7 @@ export const SobreMim = styled.section`
         justify-content: center;
         width: 180px;
         height: 180px;
-        padding: 1.5rem;
+        padding: 2rem;
         border-radius: 2rem;
         margin-bottom: 2.5rem;
         transition: .5s;
@@ -66,6 +68,7 @@ export const SobreMim = styled.section`
         }
         h4{
           white-space: nowrap;
+          font-size: .9rem;
         }
       }
 

@@ -1,26 +1,83 @@
-import React, { useState } from 'react'
 import { SectionHeader } from './Header.styled'
 import CV from "../../assets/CV.pdf"
 import foto from "../../assets/foto.jpg"
 import { AiFillLinkedin,AiFillGithub } from "react-icons/ai"
+import { useEffect, useState } from 'react'
 
 
 export const Header = () => {
 
-  const [ativo, setAtivo] = useState("")
+
+  const animacao = () => {
+    const texto = document.getElementById("texto")
+    const nome = document.getElementById("nome")
+    const subtitulo = document.getElementById("subtitulo")
+
+    const textoAnimacao = texto.innerText.split("")
+    const nomeAnimacao = nome.innerText.split("")
+    const subtituloAnimacao = subtitulo.innerText.split("")
+    texto.innerHTML = ""
+    nome.innerHTML= ""
+    subtitulo.innerHTML = ""
+
+    textoAnimacao.forEach((letra,i) => {
+      setTimeout(()=>{
+        texto.innerHTML += letra
+      }, 80 * i)
+    })
+    
+    setTimeout(()=>{
+      nomeAnimacao.forEach((letra,i) => {
+        setTimeout(()=>{
+          nome.innerHTML += letra
+        }, 80 * i)
+  
+      })
+    },1200)
+
+    setTimeout(()=>{
+      subtituloAnimacao.forEach((letra,i) => {
+        setTimeout(()=>{
+          subtitulo.innerHTML += letra
+        }, 80 * i)
+  
+      })
+    },2900)
+  
+    
+    
+  }
+  
+  useEffect(()=>{
+    animacao()
+  },[])
+
 
   return (
     <>
       <SectionHeader>
-        <h3>
-          Olá, me chamo
-        </h3>
 
-        <h1>
-          Marcus paulo Moreno
-        </h1>
+        <div className='titulo'>
+  
+          <div>
+            
+            <div className='texto'>
+              <h1 id='texto'  className='animacaoTexto'>Olá, me chamo</h1>
+            </div>
 
-        <h3 className='subtitulo'>Desenvolvedor de software front-end</h3>
+            <div className='nome'>
+              <h1 id='nome' className='animacaoNome'>Marcus Paulo Moreno</h1>
+            </div>
+
+            <div className='subtitulo'>
+              <h1 id='subtitulo' className='animacaoSubtitulo'>Desenvolvedor de software front-end</h1>
+            </div>
+
+          </div>
+
+
+          {/* <h1 id='texto'>Olá, me chamo <span className='nome'>Marcus paulo Moreno</span> <span className='subtitulo'>Desenvolvedor de software front-end</span></h1> */}
+        </div>
 
         <div className='links'>
           <a className='botao' href={CV} target="_blank">Currículo</a>
