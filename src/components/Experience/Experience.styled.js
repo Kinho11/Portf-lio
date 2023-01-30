@@ -10,7 +10,7 @@ export const Experiencia = styled.section`
 
   h1{
     text-decoration: underline;
-    margin-top: 2.5rem;
+    margin-top: 6.5rem;
     margin-bottom: 6rem;
     color: white;
     font-size: 2.5rem;

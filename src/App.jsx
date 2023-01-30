@@ -5,18 +5,22 @@ import { Header } from './components/Header/Header';
 import { Nav } from './components/Nav/Nav';
 import { Project } from './components/Project/Project';
 import { RepositorioProvider } from './Context/RepositorioGitHub/RepositorioGitHub';
+import { ToastContainer } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
+
 
 function App() {
   return (
     <>
-    <RepositorioProvider>
-      <Header/>
-        <Nav/>
-      <About/>
-      <Experience/>
-      <Project/>
-      <Contact/>
-    </RepositorioProvider>
+      <ToastContainer/>
+      <RepositorioProvider>
+        <Header/>
+          <Nav/>
+        <About/>
+        <Experience/>
+        <Project/>
+        <Contact/>
+      </RepositorioProvider>
     </>
   );
 }

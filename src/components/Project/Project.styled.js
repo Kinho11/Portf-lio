@@ -9,8 +9,7 @@ export const Projetos = styled.section`
 
   .titulo{
     text-decoration: underline;
-    margin-top: 2.5rem;
-    margin-bottom: 6rem;
+    margin-top: 6.5rem;
     color: white;
     font-size: 2.5rem;
   }
@@ -20,6 +19,7 @@ export const Projetos = styled.section`
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    height: 100%;
     width: 77vw;
     .container-card{
       display: flex;
