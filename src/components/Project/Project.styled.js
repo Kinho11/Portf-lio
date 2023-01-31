@@ -4,9 +4,8 @@ export const Projetos = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  height: 100vh;
-
+  /* width: 100%; */
+  min-height: 100vh;
   .titulo{
     text-decoration: underline;
     margin-top: 6.5rem;
@@ -17,10 +16,11 @@ export const Projetos = styled.section`
   .cards{
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
+    margin-top: -10rem;
     gap: 2rem;
-    height: 100%;
-    width: 77vw;
+    min-height: 100vh;
+    width: 77.6vw;
     .container-card{
       display: flex;
       width: 100%;
@@ -104,7 +104,35 @@ export const Projetos = styled.section`
 
   }
 
+  @media screen and (max-width: 1600px) {
+    .titulo{
+      margin-top: 15rem;
+    }
+  }
 
+  @media screen and (max-width: 600px) {
+    .cards{
+      width: 99.2vw;
+      padding: 0 1rem;
+    .container-card{
+      .cardRepo{
+        width: 230px;
+        height: 230px;
+        .icone{
+          padding: 0 1.5rem;
+        }
+      }
+    }
+
+      
+
+      i{
+        font-size: 2.2rem;
+      }
+      
+    }
+
+    }
 
 
 `

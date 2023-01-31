@@ -11,11 +11,11 @@ export const About = () => {
       <h1>Sobre Mim</h1>
 
       <div className='informacao'>
-        <div className='fotooo'>
+        <div className='foto'>
           <img className='fotoPerfil' width={300} src={foto} alt="foto de perfil" />
         </div>
 
-        <div>
+        <div className='cards'>
           <div className='container-card'>
             <div className='card'>
               <i><RiMedal2Fill/></i>

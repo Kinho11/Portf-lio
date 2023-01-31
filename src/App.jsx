@@ -7,6 +7,7 @@ import { Project } from './components/Project/Project';
 import { RepositorioProvider } from './Context/RepositorioGitHub/RepositorioGitHub';
 import { ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
+import { Footer } from './components/Footer/Footer';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Experience/>
         <Project/>
         <Contact/>
+        <Footer/>
       </RepositorioProvider>
     </>
   );

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SectionHeader = styled.section`
   margin: 5rem 0;
-  width: 100%;
+  /* width: 100vw; */
   display: flex;
   gap: .8rem;
   flex-direction: column;
@@ -105,7 +105,7 @@ export const SectionHeader = styled.section`
     align-items: center;
     gap: .8rem;
     position: absolute;
-    left: 25rem;
+    left: 15rem;
 
     .icone-social{
       font-size: 1.7rem;
@@ -130,7 +130,7 @@ export const SectionHeader = styled.section`
   .scroll{
     display: flex;
     position: absolute;
-    right: 25rem;
+    right: 15rem;
     transform: rotate(90deg);
     font-size: 1.5rem;
     a{
@@ -143,6 +143,32 @@ export const SectionHeader = styled.section`
       transition: .3s;
     }
 
+  }
+
+  @media screen and (max-width: 1600px) {
+    .titulo{
+      font-size: 1rem;
+      width: 100%;
+      .nome{
+        font-size: 1.3rem;
+      }
+
+      .subtitulo{
+        font-size: .8rem;
+      }
+    }
+
+    .foto{
+      width: 350px;
+    }
+
+    .container-social{
+      display: none;
+    }
+
+    .scroll{
+      display: none;
+    }
   }
 
 

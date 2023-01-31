@@ -2,10 +2,11 @@ import styled from "styled-components";
 
 export const Contato = styled.section`
   display: flex;
+  align-items: center;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  height: 100vh;
+  /* width: 100vw; */
+  min-height: 100vh;
 
   .titulo{
     text-decoration: underline;
@@ -18,9 +19,9 @@ export const Contato = styled.section`
   .container-contato{
     width: 70%;
     display: flex;
+    gap: 5rem;
     justify-content: center;
-    align-items: center;
-
+    
     .tipos-contatos{
       display: flex;
       align-items: center;
@@ -31,7 +32,7 @@ export const Contato = styled.section`
 
       article{
         background: rgba(255,255,255, 0.5);
-        width: 60%;
+        width: 300px;
         color: white;
         display: flex;
         flex-direction: column;
@@ -58,6 +59,7 @@ export const Contato = styled.section`
         }
 
         a{
+          white-space: nowrap;
           background-color: #363636;
           border-radius: 2rem;
           padding: .7rem 1.7rem;
@@ -72,7 +74,8 @@ export const Contato = styled.section`
     .mensagem{
       width: 60%;
       max-height: 80%;
-      /* background-color: red; */
+      padding: .7rem 0;
+
       form{
         display: flex;
         gap: 2rem;
@@ -148,5 +151,31 @@ export const Contato = styled.section`
     }
 
   }
+
+  @media screen and (max-width: 600px) {
+
+    .titulo{
+      margin-top: -5rem;
+    }
+
+    .container-contato{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      .mensagem{
+        width: 100%;
+
+        form{
+          width: 100%;
+
+          button{
+            margin-bottom: 10rem;
+          }
+        }
+
+      }
+    }
+    }
 
 `

@@ -5,8 +5,8 @@ export const Experiencia = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  height: 100vh;
+  /* width: 100vw; */
+  min-height: 100vh;
 
   h1{
     text-decoration: underline;
@@ -38,13 +38,12 @@ export const Experiencia = styled.section`
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
-      width: 90%;
       gap: 3rem;
 
       .card-experiencia{
         background:rgba(255,255,255, 0.9) ;
-        width: 150px;
-        height: 150px;
+        width: 170px;
+        height: 170px;
         padding: .7rem 1.7rem;
         border-radius: 1.5rem;
         display: flex;
@@ -74,6 +73,20 @@ export const Experiencia = styled.section`
 
 
   }
+
+  @media screen and (max-width: 600px) {
+    .container-experiencia{
+      width: 90%;
+      .cards{
+        
+        .card-experiencia{
+          width: 200px;
+        }
+      }
+
+    }
+
+    }
 
 
 `
