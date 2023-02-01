@@ -43,9 +43,9 @@ export const Contact = () => {
 
   return (
     <Contato id='contact'>
-      <h1 className='titulo'>Entre em contato</h1>
+      <h1 className='titulo' data-aos="fade-down">Entre em contato</h1>
 
-      <div className='container-contato'>
+      <div className='container-contato' data-aos="fade-right">
 
         <div className='tipos-contatos'>
           <article >

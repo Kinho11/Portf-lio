@@ -28,6 +28,10 @@ export const Projetos = styled.section`
       scroll-behavior: smooth;
       gap: 1rem;
 
+      a{
+        color: black;
+      }
+
       .cardRepo{
         width: 250px;
         height: 250px;

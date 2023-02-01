@@ -11,9 +11,9 @@ export const Experience = () => {
   return (
     <>
       <Experiencia id='experience'>
-        <h1>Experiência</h1>
+        <h1 data-aos="fade-down">Experiência</h1>
 
-        <div className='container-experiencia'>
+        <div className='container-experiencia' data-aos="zoom-in">
           <h2>Frontend Development</h2>
 
           <div className='cards'>

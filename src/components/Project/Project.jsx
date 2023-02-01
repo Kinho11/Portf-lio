@@ -28,15 +28,16 @@ export const Project = () => {
   return (
     <Projetos id='project'>
 
-      <h1 className='titulo'>Projetos</h1>
+      <h1 className='titulo' data-aos="fade-down">Projetos</h1>
 
-      <div className='cards'>
+      <div className='cards' >
 
         <i onClick={handleLeft}><AiOutlineArrowLeft/></i>
 
-        <div className='container-card' ref={carrossel}>
+        <div className='container-card' ref={carrossel} data-aos="zoom-in">
         {repositorio?.map((repositorio) => (
-          <div className='cardRepo' key={repositorio.id} >
+          <a  href={repositorio.html_url} rel="noreferrer" target='_blank'>
+            <div className='cardRepo' key={repositorio.id} >
             <span className='icone'>
               <a className='linkRepo' href={repositorio.html_url} rel="noreferrer" target='_blank'><BsFolder2Open/></a>
               <FiGithub/>
@@ -49,6 +50,7 @@ export const Project = () => {
             </div>
 
           </div>
+          </a>
         )
         )}
       </div>
