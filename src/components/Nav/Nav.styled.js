@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Menu = styled.section`
   background: rgba(255,255,255, 0.3);
+  backdrop-filter: blur(15px);
   width: max-content;
   display: flex;
   padding: 0.7rem 1.7rem;
@@ -12,7 +13,6 @@ export const Menu = styled.section`
   transform: translateX(-50%);
   bottom: 2rem;
   border-radius: 3rem;
-  backdrop-filter: blur(15px);
 
   a{
     background: transparent;

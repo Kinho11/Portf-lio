@@ -17,7 +17,8 @@ export const Experiencia = styled.section`
   }
 
   .container-experiencia{
-    background: rgba(255,255,255, 0.2);
+    border: 2px solid rgba(255,255,255, 0.5);
+    box-shadow: 5px 5px 10px rgba(255,255,255, 0.2);
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
@@ -41,7 +42,7 @@ export const Experiencia = styled.section`
       gap: 3rem;
 
       .card-experiencia{
-        background:rgba(255,255,255, 0.9) ;
+        background:rgba(255,255,255, 0.8) ;
         width: 170px;
         height: 170px;
         padding: .7rem 1.7rem;

@@ -50,7 +50,8 @@ export const SobreMim = styled.section`
         align-items: center;
         gap: 3rem;
         .card{
-          background-color: rgba(255,255,255, 0.3);
+          border: 2px solid rgba(255,255,255, 0.5);
+          box-shadow: 5px 5px 10px rgba(255,255,255, 0.2);
           display: flex;
           flex-direction: column;
           gap: .8rem;

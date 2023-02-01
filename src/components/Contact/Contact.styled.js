@@ -31,7 +31,8 @@ export const Contato = styled.section`
       gap: 2rem;
 
       article{
-        background: rgba(255,255,255, 0.5);
+        border: 2px solid rgba(255,255,255, 0.5);
+        box-shadow: 5px 5px 10px rgba(255,255,255, 0.2);
         width: 300px;
         color: white;
         display: flex;
