@@ -81,7 +81,7 @@ export const Header = () => {
 
         <div className='links' data-aos="fade-right">
           <a className='botao' href={CV} target="_blank">Currículo</a>
-          <a  className='botao' href="https://api.whatsapp.com/send?phone=+5571988932538&text=Olá, gostei bastante do seu portfólio!!" target="_blank" rel="noopener noreferrer">Vamos conversar!</a>
+          <a  className='botao' href="https://api.whatsapp.com/send?phone=+5571982732802&text=Olá, gostei bastante do seu portfólio!!" target="_blank" rel="noopener noreferrer">Vamos conversar!</a>
         </div>
 
         <div className='container-social' data-aos="fade-right">
