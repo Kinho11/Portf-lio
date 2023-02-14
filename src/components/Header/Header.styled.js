@@ -145,7 +145,7 @@ export const SectionHeader = styled.section`
 
   }
 
-  @media screen and (max-width: 1600px) {
+  @media screen and (max-width: 600px) {
     .titulo{
       font-size: 1rem;
       width: 100%;
@@ -162,6 +162,9 @@ export const SectionHeader = styled.section`
       width: 350px;
     }
 
+  }
+
+  @media screen and (max-width: 1250px) {
     .container-social{
       display: none;
     }

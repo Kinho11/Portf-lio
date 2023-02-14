@@ -10,12 +10,10 @@ import { toast } from 'react-toastify';
 
 export const Contact = () => {
 
-
-
-
   const enviarMensagem = (e) => {
     e.preventDefault()
-    emailjs.sendForm('service_w7p8luh', 'template_bg3a8ut', e.target, 'QCzx3fXI3K5COI7XF').then((response) => {
+
+    emailjs.sendForm('service_w7p8luh', 'template_bg3a8ut', e.target, 'QCzx3fXI3K5COI7XF').then(() => {
       toast.success("Mensagem enviada com sucesso!",{
         position: "top-center",
         autoClose: 2000,
