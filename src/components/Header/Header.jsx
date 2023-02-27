@@ -2,8 +2,8 @@ import { SectionHeader } from './Header.styled'
 import CV from "../../assets/CV.pdf"
 import foto from "../../assets/foto.jpg"
 import { AiFillLinkedin,AiFillGithub } from "react-icons/ai"
-import { useEffect, useState } from 'react'
-
+import { useEffect } from 'react'
+import { Fade } from "react-awesome-reveal";
 
 export const Header = () => {
 
@@ -75,28 +75,30 @@ export const Header = () => {
 
           </div>
 
-
-          {/* <h1 id='texto'>Olá, me chamo <span className='nome'>Marcus paulo Moreno</span> <span className='subtitulo'>Desenvolvedor de software front-end</span></h1> */}
         </div>
 
-        <div className='links' data-aos="fade-right">
-          <a className='botao' href={CV} target="_blank">Currículo</a>
-          <a  className='botao' href="https://api.whatsapp.com/send?phone=+5571982732802&text=Olá, gostei bastante do seu portfólio!!" target="_blank" rel="noopener noreferrer">Vamos conversar!</a>
-        </div>
+        <Fade direction="left" >
+          <div className='links' >
+            <a className='botao' href={CV} target="_blank">Currículo</a>
+            <a  className='botao' href="https://api.whatsapp.com/send?phone=+5571982732802&text=Olá, gostei bastante do seu portfólio!!" target="_blank" rel="noopener noreferrer">Vamos conversar!</a>
+          </div>
+        </Fade>
 
-        <div className='container-social' data-aos="fade-right">
+        <div className='container-social' >
           <a className='icone-social'href="https://www.linkedin.com/in/marcus-paulo-moreno/" target="_blank" ><AiFillLinkedin/></a>
           <a className='icone-social' href="https://github.com/Kinho11" target="_blank"><AiFillGithub/></a>
         </div>
 
         <div className='scroll'>
-          <a href='#contact'  data-aos="fade-right">
+          <a href='#contact'>
             Scroll down
           </a>
         </div>
 
+        <Fade direction='left'>
+         <img className='foto' src={foto} alt="" />  
+        </Fade>
 
-        <img className='foto' src={foto} alt="" />
       </SectionHeader>
     
     </>

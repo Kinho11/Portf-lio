@@ -86,7 +86,8 @@ export const SectionHeader = styled.section`
   .foto{
     width: 450px;
     border-radius: 12rem 12rem 0 0;
-    margin: 3rem 0;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
     animation: float 5s ease-in-out infinite;
   }
 

@@ -10,7 +10,7 @@ export const Contato = styled.section`
 
   .titulo{
     text-decoration: underline;
-    margin-top: 6.5rem;
+    margin-top: 1.5rem;
     margin-bottom: 6rem;
     color: white;
     font-size: 2.5rem;

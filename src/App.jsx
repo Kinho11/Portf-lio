@@ -8,14 +8,14 @@ import { RepositorioProvider } from './Context/RepositorioGitHub/RepositorioGitH
 import { ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 import { Footer } from './components/Footer/Footer';
-import AOS from 'aos';
+// import AOS from 'aos';
 import "aos/dist/aos.css";
 
 function App() {
 
-    AOS.init({
-      duration: 1200
-    })
+    // AOS.init({
+    //   duration: 1200
+    // })
 
 
   return (

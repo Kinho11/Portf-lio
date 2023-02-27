@@ -5,6 +5,7 @@ import {AiOutlineMail, AiOutlineWhatsApp} from "react-icons/ai"
 
 import emailjs from "emailjs-com"
 import { toast } from 'react-toastify';
+import { Fade } from 'react-awesome-reveal';
 
 
 
@@ -41,39 +42,45 @@ export const Contact = () => {
 
   return (
     <Contato id='contact'>
-      <h1 className='titulo' data-aos="fade-down">Entre em contato</h1>
+      <Fade direction='up'>
+       <h1 className='titulo'>Entre em contato</h1>  
+      </Fade>
 
-      <div className='container-contato' data-aos="fade-right">
+      <div className='container-contato' >
 
         <div className='tipos-contatos'>
-          <article >
-            <i><AiOutlineMail/></i>
-            <h3>Email</h3>
-            <p>Marcuspaulo.morenomf@gmail.com</p>
-            <a href="mailto:marcuspaulo.morenomf@gmail.com" target="_blank" rel="noopener noreferrer">Entre em contato</a>
-          </article>
+          <Fade direction='left'>
+            <article >
+              <i><AiOutlineMail/></i>
+              <h3>Email</h3>
+              <p>Marcuspaulo.morenomf@gmail.com</p>
+              <a href="mailto:marcuspaulo.morenomf@gmail.com" target="_blank" rel="noopener noreferrer">Entre em contato</a>
+            </article>
 
-          <article >
-            <i><AiOutlineWhatsApp/></i>
-            <h3>WhatsApp</h3>
-            <p>(71) 98273-2802</p>
-            <a href="https://api.whatsapp.com/send?phone=+5571988932538&text=Olá, gostei bastante do seu portfólio!!" target="_blank" rel="noopener noreferrer">Entre em contato</a>
-          </article>
+            <article >
+              <i><AiOutlineWhatsApp/></i>
+              <h3>WhatsApp</h3>
+              <p>(71) 98273-2802</p>
+              <a href="https://api.whatsapp.com/send?phone=+5571988932538&text=Olá, gostei bastante do seu portfólio!!" target="_blank" rel="noopener noreferrer">Entre em contato</a>
+            </article>
+          </Fade>
         </div>
 
         <div className='mensagem'>
-          <form action="" onSubmit={enviarMensagem}>
-            <div>
-            <input type="text" name="nomeCompleto" id="nomeCompleto" placeholder='Digite seu nome' required />
-            </div>
-            <div>
-            <input type="email" name="email" id="email" placeholder='Digite seu email' required />
-            </div>
-            <div>
-            <textarea name="mensagem" id="mensagem" cols="30" rows="7" placeholder='Digite uma mensagem' required></textarea>
-            </div>
-            <button type='submit'>Enviar</button>
-          </form>
+          <Fade direction='left'>
+            <form action="" onSubmit={enviarMensagem}>
+              <div>
+              <input type="text" name="nomeCompleto" id="nomeCompleto" placeholder='Digite seu nome' required />
+              </div>
+              <div>
+              <input type="email" name="email" id="email" placeholder='Digite seu email' required />
+              </div>
+              <div>
+              <textarea name="mensagem" id="mensagem" cols="30" rows="7" placeholder='Digite uma mensagem' required></textarea>
+              </div>
+              <button type='submit'>Enviar</button>
+            </form>
+          </Fade>
         </div>
 
       </div>
