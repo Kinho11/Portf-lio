@@ -9,7 +9,7 @@ import { Fade } from 'react-awesome-reveal'
 export const About = () => {
   return (
     <SobreMim id='about'>
-      <Fade direction='up'>
+      <Fade direction='right'>
         <h1>Sobre Mim</h1>
       </Fade>
 

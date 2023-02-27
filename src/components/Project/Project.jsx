@@ -29,35 +29,37 @@ export const Project = () => {
   return (
     <Projetos id='project'>
 
-      <Fade direction='up'>
+      <Fade direction='right'>
         <h1 className='titulo'>Projetos</h1>
       </Fade>
 
-      <div className='cards' >
-        <i onClick={handleLeft}><AiOutlineArrowLeft/></i>
+      <Fade direction='left'>
+        <div className='cards' >
+          <i onClick={handleLeft}><AiOutlineArrowLeft/></i>
 
-          <div className='container-card' ref={carrossel}>
-          {repositorio?.map((repositorio) => (
-              <a  href={repositorio.html_url} rel="noreferrer" target='_blank'>
-              <div className='cardRepo' key={repositorio.id} >
-              <span className='icone'>
-                <a className='linkRepo' href={repositorio.html_url} rel="noreferrer" target='_blank'><BsFolder2Open/></a>
-                <FiGithub/>
-              </span>
-              <div className='infoRepo'>
-                <h1 className='repo'>{repositorio.name}</h1>
-                {repositorio.description ? <p>{repositorio.description}</p> : <p>Repositorio sem descrição</p>}
-                {repositorio.language ? <p>{repositorio.language}</p> : <p>Repositorio sem linguagem</p> }
-                
-              </div>
+            <div className='container-card' ref={carrossel}>
+            {repositorio?.map((repositorio) => (
+                <a  href={repositorio.html_url} rel="noreferrer" target='_blank'>
+                <div className='cardRepo' key={repositorio.id} >
+                <span className='icone'>
+                  <a className='linkRepo' href={repositorio.html_url} rel="noreferrer" target='_blank'><BsFolder2Open/></a>
+                  <FiGithub/>
+                </span>
+                <div className='infoRepo'>
+                  <h1 className='repo'>{repositorio.name}</h1>
+                  {repositorio.description ? <p>{repositorio.description}</p> : <p>Repositorio sem descrição</p>}
+                  {repositorio.language ? <p>{repositorio.language}</p> : <p>Repositorio sem linguagem</p> }
+                  
+                </div>
 
-              </div>
-            </a>
-            )
-            )}
-          </div>
-        <i onClick={handleRigth}><AiOutlineArrowRight/></i>
-      </div>
+                </div>
+              </a>
+              )
+              )}
+            </div>
+          <i onClick={handleRigth}><AiOutlineArrowRight/></i>
+        </div>
+      </Fade>
 
     </Projetos>
   )

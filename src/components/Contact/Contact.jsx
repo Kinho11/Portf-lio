@@ -42,7 +42,7 @@ export const Contact = () => {
 
   return (
     <Contato id='contact'>
-      <Fade direction='up'>
+      <Fade direction='right'>
        <h1 className='titulo'>Entre em contato</h1>  
       </Fade>
 

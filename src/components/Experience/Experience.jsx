@@ -12,7 +12,7 @@ export const Experience = () => {
   return (
     <>
       <Experiencia id='experience'>
-        <Fade direction='up'>
+        <Fade direction='right'>
           <h1 >Experiência</h1>
         </Fade>
 
