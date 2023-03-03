@@ -10,12 +10,12 @@ export const About = () => {
   return (
     <SobreMim id='about'>
       {/* <Fade direction='right'> */}
-        <h1 data-aos = "zoom-in">Sobre Mim</h1>
+        <h1 data-aos = "fade-down">Sobre Mim</h1>
       {/* </Fade> */}
 
       <div className='informacao'>
         {/* <Fade direction='left'> */}
-          <div className='foto' data-aos = "zoom-in">
+          <div className='foto' data-aos = "fade-up-right">
             <img className='fotoPerfil' width={300} src={foto} alt="foto de perfil" />
           </div>
         {/* </Fade> */}
@@ -23,19 +23,19 @@ export const About = () => {
         <div className='cards'>
           {/* <Fade direction='left'> */}
               <div className='container-card' >
-                <div className='card' data-aos = "zoom-in">
+                <div className='card' data-aos = "flip-up">
                   <i><RiMedal2Fill/></i>
                   <h3>Experiência</h3>
                   <h4>1+ anos</h4>
                 </div>
 
-                <div className='card' data-aos = "zoom-in" >
+                <div className='card' data-aos = "flip-up" >
                   <i><IoIosSchool/></i>
                   <h3>Faculdade</h3>
                   <h4>Ciência da computação</h4>
                 </div>
 
-                <div className='card' data-aos = "zoom-in" >
+                <div className='card' data-aos = "flip-up" >
                   <i><AiOutlineFundProjectionScreen/></i>
                   <h3>Projetos</h3>
                   <h4>10+ concluídos</h4>

@@ -14,11 +14,12 @@ import { useEffect } from 'react';
 
 function App() {
 
-  useEffect(()=>{
+  // useEffect(()=>{
     AOS.init({
-      duration: 1400
+      duration: 1400,
+      debounceDelay: 20
     })
-  }, [])
+  // }, [])
 
 
   return (
