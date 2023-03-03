@@ -29,15 +29,12 @@ export const Project = () => {
   return (
     <Projetos id='project'>
 
-      {/* <Fade direction='right'> */}
-        <h1 className='titulo'>Projetos</h1>
-      {/* </Fade> */}
+        <h1 className='titulo' data-aos = "fade-down">Projetos</h1>
 
-      {/* <Fade direction='left'> */}
         <div className='cards' >
           <i onClick={handleLeft}><AiOutlineArrowLeft/></i>
 
-            <div className='container-card' ref={carrossel}>
+            <div className='container-card' ref={carrossel} data-aos = "zoom-in">
             {repositorio?.map((repositorio) => (
                 <a  href={repositorio.html_url} rel="noreferrer" target='_blank'>
                 <div className='cardRepo' key={repositorio.id} >
@@ -59,7 +56,6 @@ export const Project = () => {
             </div>
           <i onClick={handleRigth}><AiOutlineArrowRight/></i>
         </div>
-      {/* </Fade> */}
 
     </Projetos>
   )

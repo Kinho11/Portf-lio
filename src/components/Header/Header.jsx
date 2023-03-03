@@ -3,7 +3,6 @@ import CV from "../../assets/CV.pdf"
 import foto from "../../assets/foto.jpg"
 import { AiFillLinkedin,AiFillGithub } from "react-icons/ai"
 import { useEffect } from 'react'
-import { Fade } from "react-awesome-reveal";
 
 export const Header = () => {
 
@@ -77,27 +76,23 @@ export const Header = () => {
 
         </div>
 
-        {/* <Fade direction="left" > */}
-          <div className='links' >
+          <div className='links' data-aos = "fade-right" >
             <a className='botao' href={CV} target="_blank">Currículo</a>
             <a  className='botao' href="https://api.whatsapp.com/send?phone=+5571982732802&text=Olá, gostei bastante do seu portfólio!!" target="_blank" rel="noopener noreferrer">Vamos conversar!</a>
           </div>
-        {/* </Fade> */}
 
-        <div className='container-social' >
+        <div className='container-social' data-aos = "fade-right" >
           <a className='icone-social'href="https://www.linkedin.com/in/marcus-paulo-moreno/" target="_blank" ><AiFillLinkedin/></a>
           <a className='icone-social' href="https://github.com/Kinho11" target="_blank"><AiFillGithub/></a>
         </div>
 
         <div className='scroll'>
-          <a href='#contact'>
+          <a href='#contact' data-aos = "fade-right">
             Scroll down
           </a>
         </div>
 
-        <Fade direction='left'>
-         <img className='foto' src={foto} alt="" />  
-        </Fade>
+         <img className='foto' src={foto} alt=""  data-aos = "fade-right" />  
 
       </SectionHeader>
     

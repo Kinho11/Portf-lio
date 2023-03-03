@@ -17,7 +17,7 @@ function App() {
   // useEffect(()=>{
     AOS.init({
       duration: 1400,
-      debounceDelay: 20
+      // debounceDelay: 20
     })
   // }, [])
 

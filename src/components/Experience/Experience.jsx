@@ -5,19 +5,15 @@ import {AiFillHtml5} from "react-icons/ai"
 import {DiCss3,DiJavascript} from "react-icons/di"
 import {RiReactjsLine} from "react-icons/ri"
 import {SiTypescript,SiStyledcomponents,SiSass,SiBootstrap} from "react-icons/si"
-import { Fade } from 'react-awesome-reveal'
 
 
 export const Experience = () => {
   return (
     <>
       <Experiencia id='experience'>
-        {/* <Fade direction='right'> */}
-          <h1 >Experiência</h1>
-        {/* </Fade> */}
+          <h1 data-aos = "fade-down" >Experiência</h1>
 
-        <div className='container-experiencia'>
-          {/* <Fade direction='left'> */}
+        <div className='container-experiencia' data-aos = "zoom-in">
               <h2>Frontend Development</h2>
 
               <div className='cards'>
@@ -64,7 +60,6 @@ export const Experience = () => {
                 </article>
 
               </div>
-          {/* </Fade> */}
         </div>
 
       </Experiencia>
