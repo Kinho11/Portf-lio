@@ -77,12 +77,12 @@ export const Header = () => {
 
         </div>
 
-        <Fade direction="left" >
+        {/* <Fade direction="left" > */}
           <div className='links' >
             <a className='botao' href={CV} target="_blank">Currículo</a>
             <a  className='botao' href="https://api.whatsapp.com/send?phone=+5571982732802&text=Olá, gostei bastante do seu portfólio!!" target="_blank" rel="noopener noreferrer">Vamos conversar!</a>
           </div>
-        </Fade>
+        {/* </Fade> */}
 
         <div className='container-social' >
           <a className='icone-social'href="https://www.linkedin.com/in/marcus-paulo-moreno/" target="_blank" ><AiFillLinkedin/></a>

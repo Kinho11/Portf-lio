@@ -12,12 +12,12 @@ export const Experience = () => {
   return (
     <>
       <Experiencia id='experience'>
-        <Fade direction='right'>
+        {/* <Fade direction='right'> */}
           <h1 >Experiência</h1>
-        </Fade>
+        {/* </Fade> */}
 
         <div className='container-experiencia'>
-          <Fade direction='left'>
+          {/* <Fade direction='left'> */}
               <h2>Frontend Development</h2>
 
               <div className='cards'>
@@ -64,7 +64,7 @@ export const Experience = () => {
                 </article>
 
               </div>
-          </Fade>
+          {/* </Fade> */}
         </div>
 
       </Experiencia>

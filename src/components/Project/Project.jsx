@@ -29,11 +29,11 @@ export const Project = () => {
   return (
     <Projetos id='project'>
 
-      <Fade direction='right'>
+      {/* <Fade direction='right'> */}
         <h1 className='titulo'>Projetos</h1>
-      </Fade>
+      {/* </Fade> */}
 
-      <Fade direction='left'>
+      {/* <Fade direction='left'> */}
         <div className='cards' >
           <i onClick={handleLeft}><AiOutlineArrowLeft/></i>
 
@@ -59,7 +59,7 @@ export const Project = () => {
             </div>
           <i onClick={handleRigth}><AiOutlineArrowRight/></i>
         </div>
-      </Fade>
+      {/* </Fade> */}
 
     </Projetos>
   )

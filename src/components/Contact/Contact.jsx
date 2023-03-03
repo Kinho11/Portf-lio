@@ -42,14 +42,14 @@ export const Contact = () => {
 
   return (
     <Contato id='contact'>
-      <Fade direction='right'>
+      {/* <Fade direction='right'> */}
        <h1 className='titulo'>Entre em contato</h1>  
-      </Fade>
+      {/* </Fade> */}
 
       <div className='container-contato' >
 
         <div className='tipos-contatos'>
-          <Fade direction='left'>
+          {/* <Fade direction='left'> */}
             <article >
               <i><AiOutlineMail/></i>
               <h3>Email</h3>
@@ -63,11 +63,11 @@ export const Contact = () => {
               <p>(71) 98273-2802</p>
               <a href="https://api.whatsapp.com/send?phone=+5571988932538&text=Olá, gostei bastante do seu portfólio!!" target="_blank" rel="noopener noreferrer">Entre em contato</a>
             </article>
-          </Fade>
+          {/* </Fade> */}
         </div>
 
         <div className='mensagem'>
-          <Fade direction='left'>
+          {/* <Fade direction='left'> */}
             <form action="" onSubmit={enviarMensagem}>
               <div>
               <input type="text" name="nomeCompleto" id="nomeCompleto" placeholder='Digite seu nome' required />
@@ -80,7 +80,7 @@ export const Contact = () => {
               </div>
               <button type='submit'>Enviar</button>
             </form>
-          </Fade>
+          {/* </Fade> */}
         </div>
 
       </div>
