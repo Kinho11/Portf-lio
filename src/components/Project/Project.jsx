@@ -5,7 +5,9 @@ import { Projetos } from './Project.styled'
 import {BsFolder2Open} from "react-icons/bs"
 import {FiGithub} from "react-icons/fi"
 import {AiOutlineArrowRight,AiOutlineArrowLeft} from "react-icons/ai"
-import { Fade } from 'react-awesome-reveal'
+
+import './LangColors.css'
+
 
 export const Project = () => {
 
@@ -45,7 +47,7 @@ export const Project = () => {
                 <div className='infoRepo'>
                   <h1 className='repo'>{repositorio.name}</h1>
                   {repositorio.description ? <p>{repositorio.description}</p> : <p>Repositorio sem descrição</p>}
-                  {repositorio.language ? <p>{repositorio.language}</p> : <p>Repositorio sem linguagem</p> }
+                  {repositorio.language ? <p className={repositorio.language}>{repositorio.language}</p> : <p>Repositorio sem linguagem</p> }
                   
                 </div>
 

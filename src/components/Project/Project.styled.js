@@ -91,6 +91,9 @@ export const Projetos = styled.section`
           justify-content: space-between;
           word-wrap: break-word;
           text-align: center;
+          p{
+            font-weight: 600;
+          }
       }
         
       }
